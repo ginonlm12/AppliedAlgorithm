@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/user/OneDrive - Hanoi University of Science and Technology/Máy tính/Training/Thuat toan ung dung",
-      "program": "c:/Users/user/OneDrive - Hanoi University of Science and Technology/Máy tính/Training/Thuat toan ung dung/build/Debug/outDebug",
+      "cwd": "c:/Users/user/OneDrive - Hanoi University of Science and Technology/Máy tính/Training/AppliedAlgorithm",
+      "program": "c:/Users/user/OneDrive - Hanoi University of Science and Technology/Máy tính/Training/AppliedAlgorithm/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
