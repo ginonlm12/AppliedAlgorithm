@@ -43,6 +43,7 @@ void SOLVE(){
                 if(quantity == L[i]){
                     STime[i] = time;
                     Done[i] = true;
+                    cout << i << " " << STime[i] << " " << STime[i] + duration[i] << endl;
                     Kdone ++;
                     TotalMin = max(STime[i] + duration[i], TotalMin);
                 }
@@ -52,7 +53,7 @@ void SOLVE(){
 }
 
 int main(){
-    //freopen("inp.inp", "r", stdin);
+    freopen("inp.inp", "r", stdin);
 
     TotalMin = 0;
     input();    

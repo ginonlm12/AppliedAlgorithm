@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define Max 2000
+int n, K1, K2;
+
+void solve() {
+    int S0[Max], S1[Max];
+    // S0[i] :  sá»‘ cÃ¡ch láº­p lá»‹ch cho i ngÃ y mÃ  ngÃ y i lÃ  ngÃ y nghá»‰
+    // S1[i] : sá»‘ cÃ¡ch láº­p lá»‹ch cho i ngÃ y mÃ  ngÃ y i lÃ  ngÃ y Ä‘i lÃ m
+    for (int i=1; i<=n; i++) S0[i] = S1[i] = 0;
+
+    S0[1] = S1[K1] = S0[0] =1;
+    // nghá»‰ ngÃ y Ä‘áº§u, Ä‘i lÃ m háº¿t K1 ngÃ y Ä‘áº§u
+    for (int i = K1+1; i<= n; i++) {
+        S0[i] = S1[i-1]; // ngÃ y i nghá»‰ = ngÃ y i-1 Ä‘i lÃ m
+        for (int j = K1; j<=K2; j++) {  // tÃ­nh s1[i]
+            if (i>=j) 
+                S1[i] = S1[i] + S0[i-j];
+        }
+    }
+    cout << S0[n] + S1[n];
+}
+
+int main(int argc, char const *argv[])
+{
+    cin >> n >> K1 >> K2;
+    solve();
+    return 0;
+}
