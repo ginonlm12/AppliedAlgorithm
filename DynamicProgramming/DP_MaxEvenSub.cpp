@@ -29,7 +29,7 @@ int main(){
     cin >> n;
     Odd[0] = INT_MIN;
     Even[0] = INT_MIN;
-    for(long long i = 1;i <=n; i++){
+    for(int i = 1;i <=n; i++){
         cin >> a[i];
     }
     cout << SOLVE();
